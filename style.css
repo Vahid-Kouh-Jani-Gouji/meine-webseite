@@ -1,0 +1,81 @@
+
+body{
+        background-color: #2d2c30;
+}
+h1  {
+    color: #e1daf5;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;    
+}
+
+.location-section {
+    margin-top: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    background-color: rgb(238, 214, 231);
+}
+
+.flex-container > div {
+    background-color: #050404;
+    width: "100";
+    margin: 18px;
+    text-align: center;
+    line-height: 0px;
+    font-size: 30px;position: relative;
+    animation: myfirst 5s 100;
+    animation-direction: alternate;
+    
+}
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+    }
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    }
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #fe08de;
+}
